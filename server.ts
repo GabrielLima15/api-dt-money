@@ -64,6 +64,31 @@ app.post('/transactions', async (req, res) => {
   }
 });
 
+app.delete('/transactions/:id', async (req, res) => {
+  try {
+    const transactionId = req.params.id;
+
+    const db = await open({
+      filename: databasePath,
+      driver: sqlite3.Database,
+    });
+
+    const result = await db.run(
+      'DELETE FROM transactions WHERE id = ?',
+      transactionId
+    );
+
+    if (result.changes !== undefined && result.changes > 0) {
+      res.json({ message: 'Transaction deleted successfully' });
+    } else {
+      res.status(404).json({ error: 'Transaction not found' });
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server is listening on port:${port}`);
 });
