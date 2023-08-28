@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "description": "Iogurte ",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-04-18T20:18:40.980Z",
+      "id": 1
+    },
+    {
+      "description": "Iogurte ",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-04-18T20:18:40.980Z",
+      "id": 2
+    },
+    {
+      "description": "Iogurte ",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-04-18T20:18:40.980Z",
+      "id": 3
+    }
+  ]
+}
