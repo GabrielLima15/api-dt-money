@@ -1,4 +1,5 @@
-![Capa](https://user-images.githubusercontent.com/77641643/232164942-0f2dfcea-89b6-4f5d-8c47-b48ee58ad82b.png)
+![image](https://github.com/GabrielLima15/api-dt-money/assets/77641643/dff0dfd6-dc30-4e13-8347-de729a1d3a5e)
+
 
 ## 👨🏽‍💻 Stack
 
